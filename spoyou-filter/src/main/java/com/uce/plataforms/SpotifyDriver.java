@@ -7,7 +7,10 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-
+/*
+ * Filtrar las canciones donde el valor de "youtube_views" sea mayor a 1000000.
+ * Filtrar registros con más de 1,000,000 views en YouTube.
+ */
 public class SpotifyDriver {
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
